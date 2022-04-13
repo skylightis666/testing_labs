@@ -1,6 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
 <suite name="MultiplyDivision">
     <test name="MultiplyDivisionTests">
+        <groups>
+            <run>
+                <include name="MultiplyDivision"/>
+            </run>
+        </groups>
         <packages>
             <package name="main"/>
         </packages>
