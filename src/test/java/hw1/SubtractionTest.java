@@ -1,10 +1,10 @@
-package main;
+package hw1;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static main.BeforeTest.calculator;
+import static hw1.BeforeTest.calculator;
 
 public class SubtractionTest {
     @DataProvider
