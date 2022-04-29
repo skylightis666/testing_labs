@@ -100,7 +100,14 @@
         <profile>
             <id>SuiteUI</id>
             <properties>
-                <testng.suite.file>${project.build.testOutputDirectory}/SuiteUI.xml</testng.suite.file>
+                <testng.suite.file>${testOutputDirectory}/SuiteUI.xml</testng.suite.file>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>UISuite3</id>
+            <properties>
+                <testng.suite.file>${testOutputDirectory}/UISuite3.xml</testng.suite.file>
             </properties>
         </profile>
 
