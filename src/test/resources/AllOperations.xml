@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="AllOperations">
+    <test name="AllOperationsTests">
+        <packages>
+            <package name="hw1"/>
+        </packages>
+    </test>
+</suite>
