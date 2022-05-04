@@ -12,7 +12,7 @@ public class TestExercise2 extends BaseTest {
     @Test
     public void testExercise2(){
 
-        initUser("Home page", "Roman", "Jdi1234","ROMAN IOVLEV");
+        initUser("Home Page", "Roman", "Jdi1234","ROMAN IOVLEV");
 
         //ex2, 5) Open through the header menu Service -> Different Elements Page
         driver.findElement(By.className("dropdown-toggle")).click();
@@ -42,17 +42,18 @@ public class TestExercise2 extends BaseTest {
         driver.findElement(By.xpath(xPath)).click();
 
         //ex2, 9
-        SoftAssert softAssert2 = new SoftAssert();
-        String[] expectedValue = {"Colors: value changed to Yellow",
+        SoftAssert softAssert = new SoftAssert();
+        String[] expectedValue = {
+                "Colors: value changed to Yellow",
                 "metal: value changed to Selen",
                 "Wind: condition changed to true",
                 "Water: condition changed to true"
         };
         List<WebElement> logs = driver.findElements(By.cssSelector(".info-panel-body-log li"));
         for(int i = 0; i < expectedValue.length; i++){
-            softAssert2.assertTrue(logs.get(i).getText().contains(expectedValue[i]));
-            softAssert2.assertTrue(logs.get(i).isDisplayed());
+            softAssert.assertTrue(logs.get(i).getText().contains(expectedValue[i]));
+            softAssert.assertTrue(logs.get(i).isDisplayed());
         }
-        softAssert2.assertAll();
+        softAssert.assertAll();
     }
 }

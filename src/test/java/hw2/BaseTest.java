@@ -49,5 +49,6 @@ public class BaseTest {
 
         //ex1, 4) Assert Username is loggined
         softAssert.assertEquals(driver.findElement(By.id("user-name")).getText(), userName);
+        softAssert.assertAll();
     }
 }
