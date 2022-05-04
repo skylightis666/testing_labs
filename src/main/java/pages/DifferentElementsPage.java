@@ -53,6 +53,6 @@ public class DifferentElementsPage {
     }
 
     public List<WebElement> getLogs() {
-        return logs;
+        return this.logs;
     }
 }
