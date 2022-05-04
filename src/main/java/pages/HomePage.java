@@ -103,4 +103,8 @@ public class HomePage {
         return this.frameButton;
     }
 
+    public WebElement getBody() {
+        return this.body;
+    }
+
 }
