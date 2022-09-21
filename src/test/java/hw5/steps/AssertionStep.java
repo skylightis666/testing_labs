@@ -15,7 +15,7 @@ public class AssertionStep extends AbstractStep {
         Assert.assertEquals(driver.getTitle(), browserTitle);
     }
 
-    @And("Name is displayed and equals to {string}")
+    @Then("Name is displayed and equals to {string}")
     public void assertUsername(String username) {
         Assert.assertEquals(homePage.getUserName(), username);
     }
@@ -33,7 +33,7 @@ public class AssertionStep extends AbstractStep {
         Assert.assertEquals(driver.getTitle(), title);
     }
 
-    @And("6 Number Type Dropdowns should be displayed on Users Table on User Table Page")
+    @Then("6 Number Type Dropdowns should be displayed on Users Table on User Table Page")
     public void assertNumberTypeDropdowns() {
         List<WebElement> dropList = userTable.getDropdown();
         for(WebElement element: dropList){
@@ -41,7 +41,7 @@ public class AssertionStep extends AbstractStep {
         }
     }
 
-    @And("6 Usernames should be displayed on Users Table on User Table Page")
+    @Then("6 Usernames should be displayed on Users Table on User Table Page")
     public void assertUserNamesUserTable() {
         List<WebElement> userNames = userTable.getUserNames();
         for(WebElement element: userNames){
@@ -49,7 +49,7 @@ public class AssertionStep extends AbstractStep {
         }
     }
 
-    @And("6 Description texts under images should be displayed on Users Table on User Table Page")
+    @Then("6 Description texts under images should be displayed on Users Table on User Table Page")
     public void assertDescriptionText() {
         List<WebElement> descrtxt = userTable.getDescriptionText();
         for(WebElement element: descrtxt){
@@ -57,7 +57,7 @@ public class AssertionStep extends AbstractStep {
         }
     }
 
-    @And("6 checkboxes should be displayed on Users Table on User Table Page")
+    @Then("6 checkboxes should be displayed on Users Table on User Table Page")
     public void assertCheckboxes() {
         List<WebElement> checkBoxes = userTable.getCheckbox();
         for(WebElement element: checkBoxes){
@@ -65,14 +65,14 @@ public class AssertionStep extends AbstractStep {
         }
     }
 
-    @And("User table should contain following values:")
+    @Then("User table should contain following values:")
     public void checkTableContent(List<List<String>> expValues) {
         for (int i = 0; i < 6; i++) {
             Assert.assertEquals(userTable.getTableLineContent(i), expValues.get(i + 1));
         }
     }
 
-    @And("droplist should contain values in column Type for user Roman")
+    @Then("droplist should contain values in column Type for user Roman")
     public void assertDroplistForUser(List<String> expValues) {
         Assert.assertEquals(userTable.getDropListValues(0).stream().map(WebElement::getText).toArray(String[]::new), expValues.subList(1, 4).toArray());
     }

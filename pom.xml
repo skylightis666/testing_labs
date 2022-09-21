@@ -168,7 +168,7 @@
         <profile>
             <id>UISuite5</id>
             <properties>
-                <testng.suite.file>${testOutputDirectory}/UISuite5.xml</testng.suite.file>
+                <testng.suite.file>${testOutputDirectory}/SuiteUI5.xml</testng.suite.file>
             </properties>
         </profile>
 
