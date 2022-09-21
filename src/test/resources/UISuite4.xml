@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="UISuite4">
+    <test name="UITests4">
+        <packages>
+            <package name="hw4"/>
+            <package name="hw4.listeners"/>
+            <package name="hw4.steps"/>
+            <package name="hw4.tests.ex1"/>
+            <package name="hw4.tests.ex2"/>
+        </packages>
+    </test>
+</suite>
