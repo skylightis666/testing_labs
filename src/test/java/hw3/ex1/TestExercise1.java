@@ -44,7 +44,8 @@ public class TestExercise1 extends BaseTest {
 
         //ex1, 7) Assert that there are 4 texts on the Index Page under icons and they have proper text	4 texts below of each image	Texts are displayed and equal to expected
         List<WebElement> benefit = homePage.getBenefitTxt();
-        String[] expectedText = {"To include good practices\nand ideas from successful\nEPAM project",
+        String[] expectedText = {
+                "To include good practices\nand ideas from successful\nEPAM project",
                 "To be flexible and\ncustomizable",
                 "To be multiplatform",
                 "Already have good base\n(about 20 internal and\nsome external projects),\nwish to get more…"};

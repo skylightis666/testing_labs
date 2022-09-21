@@ -45,7 +45,8 @@ public class TestExercise2 extends BaseTest {
         diffEl.clickOption("Yellow");
 
         //ex2, 9
-        String[] expectedValue = {"Colors: value changed to Yellow",
+        String[] expectedValue = {
+                "Colors: value changed to Yellow",
                 "metal: value changed to Selen",
                 "Wind: condition changed to true",
                 "Water: condition changed to true"

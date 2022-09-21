@@ -9,7 +9,7 @@ import java.util.List;
 
 public class LeftElements {
 
-    @FindBy(css = "ul[class = 'sidebar-menu left']>li>a>span")
+    @FindBy(css = "ul[class = 'sidebar-menu left']>li")
     private List<WebElement> leftMenuElements;
 
     public LeftElements(WebDriver driver) {
